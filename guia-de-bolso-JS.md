@@ -1,6 +1,6 @@
 # Introdução ao Javascript
 
-## Formas de se trabalhar o código Javascript
+## Lugares para se escrever o código Javascript
 
 
 * Navegador (inspecionar elemento)
@@ -12,7 +12,7 @@
 
 ### Navegador
 
-Para acessar o console do seu navegador é muito fácil, no Google Chrome por exemplo basta clicar com o botão direito com uma janela aberta e escolher a opção `inspect element`.
+Para acessar o console do seu navegador é muito fácil, no Google Chrome por exemplo basta clicar com o botão direito com uma janela aberta e escolher a opção `inspect`.
 
 
 ![Inspect Element](/imagens/inspect-element.png)
@@ -26,3 +26,6 @@ E depois disso a janela de console se abrirá.
 
 Pronto, agora você pode digitar seu código Javascript aqui.
 
+### Editor de Textos
+
+Os editores de texto são extremamente úteis pois são muito bem organizados e possuem funcionalidades extremamente produtivas.

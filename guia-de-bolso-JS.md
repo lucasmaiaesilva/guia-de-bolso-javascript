@@ -7,7 +7,7 @@
 
 * Editor de textos (Sublime text)
 
-* NodeJS (https://nodejs.org)
+* Node JS (https://nodejs.org)
 
 
 ### Navegador
@@ -29,3 +29,6 @@ Pronto, agora você pode digitar seu código Javascript aqui.
 ### Editor de Textos
 
 Os editores de texto são extremamente úteis pois são muito bem organizados e possuem funcionalidades extremamente produtivas.
+
+
+### Node JS

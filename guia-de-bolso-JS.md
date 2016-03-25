@@ -51,11 +51,33 @@ O Javascript é uma linguagem fracamente tipada, ou seja, não é preciso declar
 
 Para se declarar uma variável em Javascript basta se colocar a palavra chave `var`.
 
-> var contador = 0;
+`var contador = 0;`
 
 Ao receber um valor, a linguagem Javascript automaticamente entende que a variável é do tipo inteiro. 
 
 Historicamente o Javascript é considerado uma linguagem interpretada.
 
 > Linguagem interpretada é uma linguagem de programação, onde o código fonte nessa linguagem é executado por um programa de computador chamado interpretador, que em seguida é executado pelo sistema operacional ou processador. Mesmo que um código em uma linguagem passe pelo processo de compilação, a linguagem pode ser considerada interpretada, se o programa resultante não for executado diretamente pelo sistema operacional ou processador. Fisher, Alice; Grodzinsky, Frances S (1993).
+
+### Tipos de dados
+
+Alguns tipos de dados mais conhecidos.
+
+#### Undefined
+
+Quando criamos uma variável em Javascript e não atribuímos um valor a ela, ela é uma variável indefined.
+
+`var x ;`
+
+#### Number
+
+#### String
+
+#### Boolean
+
+#### Null
+
+#### Object 
+
+### Array
 

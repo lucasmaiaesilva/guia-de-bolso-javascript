@@ -41,5 +41,21 @@ Node.js é uma plataforma construída sobre o motor JavaScript do Google Chrome 
 
 Na programação, uma variável é um objeto (uma posição, frequentemente localizada na memória) capaz de reter e representar um valor ou expressão. Enquanto as variáveis só "existem" em tempo de execução, elas são associadas a "nomes", chamados identificadores, durante o tempo de desenvolvimento.
 
+### Declarando variável em Javascript
 
+Em outras linguagens é super comum encontrarmos o `tipo` da variável declarada juntamente com seu valor como por exemplo `int contador = 0`, essas linguagens são conhecidas como fortemente tipadas e geralmente são linguagens `compiladas`.
+
+> Linguagem compilada é uma linguagem de programação em que o código fonte, nessa linguagem, é executado diretamente pelo sistema operacional ou pelo processador, após ser traduzido por meio de um processo chamado compilação, usando um programa de computador chamado compilador, para uma linguagem de baixo nível, como linguagem de montagem ou código de máquina. Scott, Michael L (2006).
+
+O Javascript é uma linguagem fracamente tipada, ou seja, não é preciso declarar o tipo da variável.
+
+Para se declarar uma variável em Javascript basta se colocar a palavra chave `var`.
+
+> var contador = 0;
+
+Ao receber um valor, a linguagem Javascript automaticamente entende que a variável é do tipo inteiro. 
+
+Historicamente o Javascript é considerado uma linguagem interpretada.
+
+> Linguagem interpretada é uma linguagem de programação, onde o código fonte nessa linguagem é executado por um programa de computador chamado interpretador, que em seguida é executado pelo sistema operacional ou processador. Mesmo que um código em uma linguagem passe pelo processo de compilação, a linguagem pode ser considerada interpretada, se o programa resultante não for executado diretamente pelo sistema operacional ou processador. Fisher, Alice; Grodzinsky, Frances S (1993).
 

@@ -79,5 +79,7 @@ Quando criamos uma variável em Javascript e não atribuímos um valor a ela, el
 
 #### Object 
 
+`x = {}`
+
 ### Array
 

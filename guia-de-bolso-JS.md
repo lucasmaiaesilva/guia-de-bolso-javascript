@@ -65,21 +65,46 @@ Alguns tipos de dados mais conhecidos.
 
 #### Undefined
 
-Quando criamos uma variável em Javascript e não atribuímos um valor a ela, ela é uma variável indefined.
+Quando criamos uma variável em Javascript e não atribuímos um valor a ela, ela é uma variável undefined.
 
 `var x ;`
 
 #### Number
 
+`var x = 1 ;`
+
+`var y = 0.65 ;`
+
+
 #### String
+
+`var mensagem = "olá mundo!" ;`
+
+`var mensagem = 'olá mundo! ;'`
 
 #### Boolean
 
+`var ligado = true ;`
+
+`var ligado = false ;`
+
 #### Null
+
+
 
 #### Object 
 
-`x = {}`
+`var x = {}`
+
+Criando um objeto
+
+`var lucas = { altura: 1.8, peso: 80 }`
+
+Para acessar cada valor separadamente basta "chamar" o objeto e em seguida a propriedade ou método desejado.
+
+`lucas.peso ; // 80`
+
+`lucas.altura ; // 1.8`
 
 ### Array
 

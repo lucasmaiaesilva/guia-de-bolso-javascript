@@ -88,13 +88,10 @@ Quando criamos uma variável em Javascript e não atribuímos um valor a ela, el
 
 `var ligado = false ;`
 
-#### Null
-
-
 
 #### Object 
 
-`var x = {}`
+`var objeto = {}`
 
 Criando um objeto
 
@@ -107,4 +104,16 @@ Para acessar cada valor separadamente basta "chamar" o objeto e em seguida a pro
 `lucas.altura ; // 1.8`
 
 ### Array
+
+O array é uma lista de valores, geralmente valores do mesmo tipo.
+
+`var array = []`
+
+`var frutas = ["maçã", "pêra", "pêssego"] ;`
+
+O array é acessado por índice, onde a primeira posição do array é a posição 0. Para acessar os valores basta inserir o índice daquele dado requerido.
+
+`frutas[0]; // maçã`
+
+`frutas[2]; // pêssego`
 

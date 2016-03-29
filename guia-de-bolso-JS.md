@@ -127,3 +127,30 @@ Os operadores aritmáticos em Javascript são:
 * Multiplicação * ( `3 * 5 ; //15`)
 * Divisão / ( `10 / 2 ; //5`)
 
+#### Operadores Aritméticos Abreviados
+
+Digamos que você possua em sua aplicação uma variável chamada `contador` e o valor dessa variável é 15 e você precisa que em algum determinado momento do seu código a mesma variável tenha que atualizar o seu valor acrescentando 1 ao seu valor final. Teoricamente o código ficaria assim:
+
+`contador = contador + 1 ; //16`
+
+Porém no Javascript temos os operadores aritméticos abreviados, podendo ser feito também da seguinte maneira:
+
+`contador++`
+
+Nesse caso o resultado final seria o mesmo.
+
+Esse processo é chamado de **pós incremento** por que naquele momento em que está sendo utilizada aquela determinada linha de código, o operador ainda está interpretando o valor antigo da variável. No caso do **pré incremento** é o contrário, a variável já é interpretada com o valor somado logo de início. Esses operadores são mais simples porém são uma ótima opção para deixar o código mais limpo.
+
+* soma++ (pós incremento)
+* ++soma (pré incremento)
+* soma-- (pós decremento)
+* --soma (pré decremento)
+
+Esses operadores são muito úteis, porém os operadores citados até agora são utilizados apenas para quando queremos somar 1 ou subtrair 1 do valor. Vejamos outras utilizações mais flexíveis:
+
+* contador += 10 (pega o atual valor da variável contador e **soma** 10 e atribui a variável)
+* contador -= 10 (pega o atual valor da variável contador e **subtrai** 10 e atribui a variável)
+* contador /= 10 (pega o atual valor da variável contador e **divide** 10 e atribui a variável)
+* contador *= 10 (pega o atual valor da variável contador e **multiplica** 10 e atribui a variável)
+
+Em resumo podemos dizer que a expressão `soma = soma + 20` é equivalente a expressão `soma += 20`. 

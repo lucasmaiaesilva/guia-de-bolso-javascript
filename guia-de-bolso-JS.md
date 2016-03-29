@@ -117,3 +117,13 @@ O array é acessado por índice, onde a primeira posição do array é a posiç�
 
 `frutas[2]; // pêssego`
 
+
+### Operadores Aritméticos
+
+Os operadores aritmáticos em Javascript são:
+
+* Adição + ( `1 + 2 ; //3`)
+* Subtração - ( `5 - 1 ; //4`)
+* Multiplicação * ( `3 * 5 ; //15`)
+* Divisão / ( `10 / 2 ; //5`)
+

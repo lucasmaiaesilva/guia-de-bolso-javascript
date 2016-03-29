@@ -35,6 +35,8 @@ Os editores de texto são extremamente úteis pois são muito bem organizados e 
 
 Node.js é uma plataforma construída sobre o motor JavaScript do Google Chrome para facilmente construir aplicações de rede rápidas e escaláveis. Node.js usa um modelo de I/O direcionada a evento não bloqueante que o torna leve e eficiente, ideal para aplicações em tempo real com troca intensa de dados através de dispositivos distribuídos.
 
+Ao se instalar o node JS em sua máquina você pode digitar o comando `node` em seu terminal e lá poderá executar comandos Javascript no console do node que se abrirá.
+
 ## Entendendo a linguagem
 
 ### Variáveis
@@ -122,10 +124,10 @@ O array é acessado por índice, onde a primeira posição do array é a posiç�
 
 Os operadores aritmáticos em Javascript são:
 
-* Adição + ( `1 + 2 ; //3`)
-* Subtração - ( `5 - 1 ; //4`)
-* Multiplicação * ( `3 * 5 ; //15`)
-* Divisão / ( `10 / 2 ; //5`)
+* `Adição +` ( `1 + 2 ; //3`)
+* `Subtração -` ( `5 - 1 ; //4`)
+* `Multiplicação *` ( `3 * 5 ; //15`)
+* `Divisão /` ( `10 / 2 ; //5`)
 
 #### Operadores Aritméticos Abreviados
 
@@ -141,16 +143,16 @@ Nesse caso o resultado final seria o mesmo.
 
 Esse processo é chamado de **pós incremento** por que naquele momento em que está sendo utilizada aquela determinada linha de código, o operador ainda está interpretando o valor antigo da variável. No caso do **pré incremento** é o contrário, a variável já é interpretada com o valor somado logo de início. Esses operadores são mais simples porém são uma ótima opção para deixar o código mais limpo.
 
-* soma++ (pós incremento)
-* ++soma (pré incremento)
-* soma-- (pós decremento)
-* --soma (pré decremento)
+* `soma++` (pós incremento)
+* `++soma` (pré incremento)
+* `soma--` (pós decremento)
+* `--soma` (pré decremento)
 
 Esses operadores são muito úteis, porém os operadores citados até agora são utilizados apenas para quando queremos somar 1 ou subtrair 1 do valor. Vejamos outras utilizações mais flexíveis:
 
-* contador += 10 (pega o atual valor da variável contador e **soma** 10 e atribui a variável)
-* contador -= 10 (pega o atual valor da variável contador e **subtrai** 10 e atribui a variável)
-* contador /= 10 (pega o atual valor da variável contador e **divide** 10 e atribui a variável)
-* contador *= 10 (pega o atual valor da variável contador e **multiplica** 10 e atribui a variável)
+* `contador += 10` (pega o atual valor da variável contador e **soma** 10 e atribui a variável)
+* `contador -= 10` (pega o atual valor da variável contador e **subtrai** 10 e atribui a variável)
+* `contador /= 10` (pega o atual valor da variável contador e **divide** 10 e atribui a variável)
+* `contador *= 10` (pega o atual valor da variável contador e **multiplica** 10 e atribui a variável)
 
 Em resumo podemos dizer que a expressão `soma = soma + 20` é equivalente a expressão `soma += 20`. 

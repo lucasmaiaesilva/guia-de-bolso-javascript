@@ -69,6 +69,10 @@ Alguns tipos de dados mais conhecidos.
 
 Quando criamos uma variável em Javascript e não atribuímos um valor a ela, ela é uma variável undefined.
 
+#### Null
+
+O null é bem parecido com undefined, porém existem algumas diferenças que veremos posteriormente.
+
 `var x ;`
 
 #### Number
@@ -156,3 +160,4 @@ Esses operadores são muito úteis, porém os operadores citados até agora são
 * `contador *= 10` (pega o atual valor da variável contador e **multiplica** 10 e atribui a variável)
 
 Em resumo podemos dizer que a expressão `soma = soma + 20` é equivalente a expressão `soma += 20`. 
+

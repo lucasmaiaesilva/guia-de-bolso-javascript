@@ -161,3 +161,48 @@ Esses operadores são muito úteis, porém os operadores citados até agora são
 
 Em resumo podemos dizer que a expressão `soma = soma + 20` é equivalente a expressão `soma += 20`. 
 
+### Operadores Relacionais
+
+Quando usamos estruturas de decisão em nosso código geralmente precisamos que a nossa aplicação "decida" entre uma opção e outra. Para isso usamos algumas expressões de resultado final booleano que nos auxiliam nisso.
+
+Por exemplo se executarmos o seguinte código Javascript:
+
+`1 == 1` ele retornará true, porque lê-se 1 é igual a 1.
+
+Porém se executarmos `1 != 1` ele retornará false, pois essa expressão é lida como 1 é diferente de 1.
+
+Vejamos as opções que temos em Javascript para expressões com operadores relacionais:
+
+* `==` igual a
+* `!=` diferente de
+* `===` igual a, e do mesmo tipo
+* `!==` diferente de, porém do mesmo tipo
+* `>` maior que
+* `<` menor que
+* `>=` maior ou igual
+* `<=` menor ou igual
+
+Quando usamos o sinal `===` também comparamos o **tipo** da variável juntamente com seu valor.
+
+Ex:
+
+`true == "true";` o resultado dessa expressão é true, mas se você parar pra olhar o segundo valor está entre aspas, o que caracteriza uma String e o primeiro valor é do tipo booleano então os valores são os mesmos, porém o **tipo** da variável é diferente.
+
+`12 == '12'; // true`.
+
+`12 === '12'; // false`.
+
+`12 != '12'; // false`.
+
+`12 !== '12'; // false`, nesse último caso as duas variáveis são diferentes, porém não são do mesmo tipo, então é retornado valor false para a expressão.
+
+
+`13 !== 14; //true`, são diferentes porém são do mesmo tipo.
+
+`10 < 5; //false`. 
+
+`10 <= 10; //true`.
+
+`10 < 10; //false`.
+
+

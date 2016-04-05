@@ -207,3 +207,5 @@ Ex:
 
 ### Funções
 
+As funções são blocos repetidos de códigos que podem ser chamados por uma espécie de assinatura, o uso das funções é muito importante para legibilidade e reutilização de código por exemplo.
+

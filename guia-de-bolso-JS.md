@@ -53,7 +53,9 @@ O Javascript é uma linguagem fracamente tipada, ou seja, não é preciso declar
 
 Para se declarar uma variável em Javascript basta se colocar a palavra chave `var`.
 
-`var contador = 0;`
+```js
+var contador = 0;
+``
 
 Ao receber um valor, a linguagem Javascript automaticamente entende que a variável é do tipo inteiro. 
 

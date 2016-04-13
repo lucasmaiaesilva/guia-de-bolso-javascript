@@ -55,7 +55,7 @@ Para se declarar uma variável em Javascript basta se colocar a palavra chave `v
 
 ```js
 var contador = 0;
-``
+```
 
 Ao receber um valor, a linguagem Javascript automaticamente entende que a variável é do tipo inteiro. 
 

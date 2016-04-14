@@ -75,14 +75,13 @@ Quando criamos uma variável em Javascript e não atribuímos um valor a ela, el
 
 O null é bem parecido com undefined, porém existem algumas diferenças que veremos posteriormente.
 
-`var x ;`
-
 #### Number
 
-`var x = 1 ;`
+```js
+var x = 1 ;
 
-`var y = 0.65 ;`
-
+var y = 0.65 ;
+```
 
 #### String
 

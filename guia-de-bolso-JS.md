@@ -85,15 +85,19 @@ var y = 0.65 ;
 
 #### String
 
-`var mensagem = "olá mundo!" ;`
+```js
+var mensagem = "olá mundo!" ;
 
-`var mensagem = 'olá mundo! ;'`
+var mensagem = 'olá mundo! ;
+```
 
 #### Boolean
 
-`var ligado = true ;`
+```js
+var ligado = true ;
 
-`var ligado = false ;`
+var ligado = false ;
+```
 
 
 #### Object 

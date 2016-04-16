@@ -102,31 +102,46 @@ var ligado = false ;
 
 #### Object 
 
-`var objeto = {}`
+```js
+var objeto = {};
+```
 
 Criando um objeto
 
-`var lucas = { altura: 1.8, peso: 80 }`
+```js
+var lucas = { 
+	altura: 1.8,
+	peso: 80 
+};
+```
 
 Para acessar cada valor separadamente basta "chamar" o objeto e em seguida a propriedade ou método desejado.
 
-`lucas.peso ; // 80`
-
-`lucas.altura ; // 1.8`
+```js
+lucas.peso ; 
+// 80
+lucas.altura ; 
+// 1.8
+```
 
 ### Array
 
 O array é uma lista de valores, geralmente valores do mesmo tipo.
 
-`var array = []`
+```js
+var array = [];
 
-`var frutas = ["maçã", "pêra", "pêssego"] ;`
+var frutas = ["maçã", "pêra", "pêssego"] ;
+```
 
 O array é acessado por índice, onde a primeira posição do array é a posição 0. Para acessar os valores basta inserir o índice daquele dado requerido.
 
-`frutas[0]; // maçã`
-
-`frutas[2]; // pêssego`
+```js
+frutas[0];
+// maçã
+frutas[2];
+// pêssego
+```
 
 
 ### Operadores Aritméticos

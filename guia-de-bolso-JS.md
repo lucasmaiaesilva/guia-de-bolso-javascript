@@ -88,7 +88,7 @@ var y = 0.65 ;
 ```js
 var mensagem = "olá mundo!" ;
 
-var mensagem = 'olá mundo! ;
+var mensagem = 'olá mundo!' ;
 ```
 
 #### Boolean

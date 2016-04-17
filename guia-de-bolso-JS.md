@@ -148,20 +148,43 @@ frutas[2];
 
 Os operadores aritmáticos em Javascript são:
 
-* `Adição +` ( `1 + 2 ; //3`)
-* `Subtração -` ( `5 - 1 ; //4`)
-* `Multiplicação *` ( `3 * 5 ; //15`)
-* `Divisão /` ( `10 / 2 ; //5`)
+```js
+var a = 5;
+var b = 2;
+
+// Adição
+var soma = a + b;
+// 7
+
+// Subtração
+var sub = a - b;
+// 3
+
+// Multiplicação
+var mult = a * b;
+// 10
+
+// Divisão
+var div = a / b;
+// 2.5
+```
 
 #### Operadores Aritméticos Abreviados
 
 Digamos que você possua em sua aplicação uma variável chamada `contador` e o valor dessa variável é 15 e você precisa que em algum determinado momento do seu código a mesma variável tenha que atualizar o seu valor acrescentando 1 ao seu valor final. Teoricamente o código ficaria assim:
 
-`contador = contador + 1 ; //16`
+```js
+var contador = 15;
+contador = contador + 1 ; 
+
+// 16
+```
 
 Porém no Javascript temos os operadores aritméticos abreviados, podendo ser feito também da seguinte maneira:
 
-`contador++`
+```js
+contador++;
+```
 
 Nesse caso o resultado final seria o mesmo.
 
@@ -174,10 +197,19 @@ Esse processo é chamado de **pós incremento** por que naquele momento em que e
 
 Esses operadores são muito úteis, porém os operadores citados até agora são utilizados apenas para quando queremos somar 1 ou subtrair 1 do valor. Vejamos outras utilizações mais flexíveis:
 
-* `contador += 10` (pega o atual valor da variável contador e **soma** 10 e atribui a variável)
-* `contador -= 10` (pega o atual valor da variável contador e **subtrai** 10 e atribui a variável)
-* `contador /= 10` (pega o atual valor da variável contador e **divide** 10 e atribui a variável)
-* `contador *= 10` (pega o atual valor da variável contador e **multiplica** 10 e atribui a variável)
+```js
+contador += 10;
+// pega o atual valor da variável contador e SOMA 10 e atribui a variável
+
+contador -= 10;
+// pega o atual valor da variável contador e SUBTRAI 10 e atribui a variável
+
+contador *= 10;
+// pega o atual valor da variável contador e MULTIPLICA 10 e atribui a variável
+
+contador /= 10;
+// pega o atual valor da variável contador e DIVIDE 10 e atribui a variável
+```
 
 Em resumo podemos dizer que a expressão `soma = soma + 20` é equivalente a expressão `soma += 20`. 
 
@@ -208,22 +240,35 @@ Ex:
 
 `true == "true";` o resultado dessa expressão é true, mas se você parar pra olhar o segundo valor está entre aspas, o que caracteriza uma String e o primeiro valor é do tipo booleano então os valores são os mesmos, porém o **tipo** da variável é diferente.
 
-`12 == '12'; // true`.
+> O resultado dessas expressões é controverso em algumas versões atuais do javascript, algumas versões do Javascript comparam o tipo da variável mesmo com o operador `==`.
 
-`12 === '12'; // false`.
+```js
+12 == '12';
+// true
 
-`12 != '12'; // false`.
+12 === '12';
+// false
 
-`12 !== '12'; // false`, nesse último caso as duas variáveis são diferentes, porém não são do mesmo tipo, então é retornado valor false para a expressão.
+12 != '12';
+// false
 
+12 !== '12'; 
+// false
+// caso as duas variáveis são diferentes, porém não são do mesmo tipo, então é retornado valor false para a expressão.
 
-`13 !== 14; //true`, são diferentes porém são do mesmo tipo.
+13 !== 14;
+// true
+// são diferentes porém são do mesmo tipo.
 
-`10 < 5; //false`. 
+10 < 5;
+//false
 
-`10 <= 10; //true`.
+10 <= 10;
+//true
 
-`10 < 10; //false`.
+10 < 10;
+//false
+```
 
 ### Funções
 

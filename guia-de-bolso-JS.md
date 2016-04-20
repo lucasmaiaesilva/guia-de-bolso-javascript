@@ -282,6 +282,16 @@ function somarNumeros() {
 }
 ```
 
+As funções podem conter ou não conter parâmetros, que nada mais são do que as variáveis que a função precisaria externamente para gerar um resultado (retorno). 
+
+```js
+function verificarSeONumeroEPar(a, b){
+	if (a % 2 === 0)
+		return true;
+	return false;
+}
+```
+
 ### Exercícios de Fixação
 
 ```js
@@ -324,3 +334,4 @@ function somarNumeros() {
 // Invoque a função criada acima, passando os parâmetros 10 e 2.
 ?
 ```
+

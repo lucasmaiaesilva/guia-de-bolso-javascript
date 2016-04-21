@@ -291,6 +291,26 @@ function verificarSeONumeroEPar(numero){
 	return false;
 }
 ```
+Para invocar a função acima basta usar o nome dela e passar o valor desejado dentro dos parênteses, dessa maneira:
+
+```js
+verificarSeONumeroEPar(2);
+// true
+
+verificarSeONumeroEPar(1889231);
+// false
+```
+Como mencionado o parâmetro `número` é a referência que essa função precisa, que venha externa ao valor.
+
+As Principais características das funções são:
+
+* Retornam valores
+
+* Criam escopo
+
+* São blocos de códigos nomeados onde podemos invocá-las no código sempre que possível
+
+* Podem receber argumentos ou parâmetros
 
 ### Exercícios de Fixação
 

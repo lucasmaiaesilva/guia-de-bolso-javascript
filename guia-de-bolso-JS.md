@@ -355,4 +355,3 @@ As Principais características das funções são:
 ?
 ```
 
-### Parte 2

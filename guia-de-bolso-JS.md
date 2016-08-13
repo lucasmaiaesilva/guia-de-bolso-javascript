@@ -356,3 +356,93 @@ As variáveis Truthy são todas as outras.
 !!"false";
 // true
 ```
+
+### If Ternário
+
+```js
+var pessoa = {
+	sexo: "Masculino"
+};
+var sexo = pessoa.sexo === "Feminino" ? "a"; "o";
+
+sexo;
+// o
+
+
+
+NaN ? "verdadeiro" : "falso";
+// falso
+
+```
+
+### Escopo de variáveis
+
+Escopo é o local onde declaramos a variável. 
+
+Existem dois tipos de escopo de variável o `global` e o `local`.
+
+#### Global
+
+Sempre que declaramos uma variável fora de função, essa variável está sendo declarada no escopo `global`. 
+
+```js
+var nome = "lucas";
+```
+#### Local
+
+Quando criamos a variável dentro da função, ela está sendo criada pelo escopo `local`.
+
+```js
+var declaraNome = function() {
+	var nome = "lucas";
+}
+```
+
+> Legal, mas qual a diferença?
+
+Bom, a grosso modo é que a variável criada em escopo `local`, ou seja, dentro da função, não pode ser acessada pelo lado de fora.
+
+```js
+var declaraNome = function() {
+	var nome = "lucas";
+}
+
+nome;
+// undefined
+```
+
+É importante sabermos que o Javascipt assim como as outras linguagens possui o *garbage collector*, que nada mais é do que um ciclo executado para limpar o ambiente daquelas variáveis ou qualquer outra coisa que não esteja sendo mais utilizada naquele momento. 
+
+Por isso que quando criamos uma variável em Javascript devemos utilizar a palavra chave **var** porque é ela que diz ao javascript que aquela variável está no escopo local e assim assumir isso como uma boa prática na hora da programação.
+
+```js
+var MyFunction = function() {
+	var x = 5;
+	y = 18;
+}
+
+x;
+// undefined
+
+y;
+// 18
+```
+
+> Declarar uma variável sem o prefixo **var** pode acarretar vários problemas, tais como: não reconhecimento do garbage collector, conflito de nomes, etc.
+
+Parâmetros de funções também são locais:
+
+```js
+soma(a, b){
+	return a + b;
+}
+soma(5, 10);
+// 15
+
+a;
+// undefined
+
+b;
+// undefined
+```
+

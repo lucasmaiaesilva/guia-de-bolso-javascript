@@ -347,7 +347,7 @@ As variáveis Truthy são todas as outras.
 !!NaN;
 // false
 
-"";
+!!"";
 // false
 
 !!false;

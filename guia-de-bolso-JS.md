@@ -316,3 +316,43 @@ As Principais características das funções são:
 
 Exercício de Fixação 1 em arquivo separado
 
+### Truthy e Falsy
+
+Como vimos anteriormente, existem expressões e/ou declarações de variáveis que se limitam somente a duas opções, `true` ou `false`. Quando declaramos uma variável em Javascript, automaticamente ela assume uma dessas propriedades por padrão. 
+
+#### Falsy
+
+As variáveis que são tidas pelo Javascript como falsy são:
+
+```js
+false;
+NaN; // Not a Number
+0;
+-0;
+null;
+undefined;
+''; // String vazia com aspas simples
+""; // String vazia com aspas duplas
+```
+
+Ao analisarmos essas variáveis veremos que elas automaticamente tidas como `false`.
+
+#### Truthy
+
+As variáveis Truthy são todas as outras.
+
+> Para analisarmos se uma variável é Truthy ou Falsy, basta usarmos o operador **!!**
+
+```js
+!!NaN;
+// false
+
+"";
+// false
+
+!!false;
+// false
+
+!!"false";
+// true
+```

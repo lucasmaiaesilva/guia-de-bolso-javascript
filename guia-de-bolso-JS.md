@@ -375,6 +375,17 @@ NaN ? "verdadeiro" : "falso";
 
 ```
 
+#### if Ternário utilizando return
+
+Também podemos **retornar** dados de uma função com a notação ternária:
+
+```js
+function VerificaSeONumeroEPar(num) {
+	return num % 2 === 0 ? true : false;
+}
+
+```
+
 ### Escopo de variáveis
 
 Escopo é o local onde declaramos a variável. 

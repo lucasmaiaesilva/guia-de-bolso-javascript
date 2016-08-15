@@ -457,3 +457,24 @@ b;
 // undefined
 ```
 
+### Switch
+
+Switch é um tipo de estrutura condicional, ou seja uma estrutura de decisão utilizada para definir alguma ação para o código. Geralmente é usada para substituir o `If` em situações mais complexas.
+
+```js
+function menu(option) {
+	switch(option) {
+		case 'home':
+			console.log('chamar página principal aqui');
+			break;
+		case 'about':
+			console.log('página about');
+			break;
+		default:
+			console.log('página não encontrada');
+			break;
+	}	
+}
+```
+
+> O comando `break` é extremamente importante pois é o comando que diz ao seu código para parar de analisar a estrutura de decisão e sair dela. Portanto não podemos esquecer de utilizar esse comando.

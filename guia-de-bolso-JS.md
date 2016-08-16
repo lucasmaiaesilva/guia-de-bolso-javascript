@@ -142,7 +142,21 @@ frutas[0];
 frutas[2];
 // pêssego
 ```
+> O array na linguagem Javascript nada mais é do que um **objeto disfarçado**, e como um objeto também possui suas propriedades e métodos, sendo alguns deles:
 
+#### length
+
+A propriedade length retorna um número inteiro com a quantidade de itens que aquele array possui.
+
+```js
+var arr = [ 'Lucas', NaN, true, false, {}, "Atlético MG"];
+
+// para saber a quantidade de itens que esse array possui basta invocar a propriedade length
+arr.length;
+// 6
+
+// utilizando o length podemos facilmente para 'varrer' um array para analisarmos todos os itens dele
+```
 
 ### Operadores Aritméticos
 

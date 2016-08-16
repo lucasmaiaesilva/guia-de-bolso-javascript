@@ -478,3 +478,33 @@ function menu(option) {
 ```
 
 > O comando `break` é extremamente importante pois é o comando que diz ao seu código para parar de analisar a estrutura de decisão e sair dela. Portanto não podemos esquecer de utilizar esse comando.
+
+### Estruturas de repetição (Loops)
+
+#### while
+
+```js
+
+```
+
+#### for
+
+```js
+
+```
+
+#### foreach
+
+```js
+
+```
+
+### Operador módulo %
+
+O operador de módulo nos retorna o resto da divisão inteiro, ou seja, a representação inteira do valor que restou da divisão entre dois números.
+
+```js
+5 % 2 = 1
+// ou seja o resultado da divisão é 2 e sobra 1. (2 x 2 = 4 e 5 - 4 sobra 1).
+```
+> Esse operador é útil por exemplo para descobrirmos se um número é par, pois é só dividir ele por 2, se houver resto ele é ímpar, e se não houver ele é par.

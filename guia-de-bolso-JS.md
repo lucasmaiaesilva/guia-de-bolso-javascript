@@ -158,6 +158,19 @@ arr.length;
 // utilizando o length podemos facilmente para 'varrer' um array para analisarmos todos os itens dele
 ```
 
+#### método push
+
+O método push serve para acrescentar itens novos ao array, esse método é extremamente utilizado.
+
+```js
+var frutas = ['maçã', 'pêra', 'abacaxi'];
+frutas;
+// ['maçã', 'pêra', 'abacaxi']
+
+frutas.push('ameixa');
+// ['maçã', 'pêra', 'abacaxi', 'ameixa']
+``` 
+
 ### Operadores Aritméticos
 
 Os operadores aritmáticos em Javascript são:
@@ -503,8 +516,25 @@ function menu(option) {
 
 #### for
 
-```js
+sintaxe:
+**for( inicializador; condição; expressão final )**
 
+```js
+for(var cont = 0; cont < 10; cont++) {
+	console.log(cont);
+}
+/*
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+*/ 
 ```
 
 #### foreach
@@ -522,3 +552,59 @@ O operador de módulo nos retorna o resto da divisão inteiro, ou seja, a repres
 // ou seja o resultado da divisão é 2 e sobra 1. (2 x 2 = 4 e 5 - 4 sobra 1).
 ```
 > Esse operador é útil por exemplo para descobrirmos se um número é par, pois é só dividir ele por 2, se houver resto ele é ímpar, e se não houver ele é par.
+
+### Programação Funcional
+
+```js
+function calculator(operador) {
+	return function calc(num1, num2) {
+		var resultado = true;
+		var calculo = 0;
+		switch (operador) {
+			case '+':
+				calculo = num1 + num2;
+				break;
+			case '-':
+				calculo = num1 - num2;
+				break;
+			case '*':
+				calculo = num1 * num2;
+				break;
+			case '/':
+				calculo = num1 / num2;
+				break;
+			case '%':
+				calculo = num1 % num2;
+				break;
+			default:
+				resultado = false;
+				break;
+		}
+		if(resultado)
+			return 'Resultado da operação: ' + num1 + operador + num2 + ' = ' + calculo;
+		return 'Operação inválida';
+	}
+}
+
+var sum = calculator('+');
+
+console.log(sum(1,2));
+// Resultado da operação: 1+2 = 3
+
+var subtraction = calculator('-');
+var multiplication = calculator('*');
+var division = calculator('/');
+var mod = calculator('%');
+
+console.log(subtraction(4, 5));
+// Resultado da operação: 4-5 = -1
+
+console.log(multiplication(20, 5));
+// Resultado da operação: 20*5 = 100
+
+console.log(division(300, 5));
+// Resultado da operação: 300/5 = 60
+
+console.log(mod(5, 2));
+// Resultado da operação: 5%2 = 1
+```

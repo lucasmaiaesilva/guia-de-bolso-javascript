@@ -489,20 +489,20 @@ function VerificaSeONumeroEPar(num) {
 
 ```
 
-### Escopo de variáveis
+## Escopo de variáveis
 
 Escopo é o local onde declaramos a variável. 
 
 Existem dois tipos de escopo de variável o `global` e o `local`.
 
-#### Global
+### Global
 
 Sempre que declaramos uma variável fora de função, essa variável está sendo declarada no escopo `global`. 
 
 ```js
 var nome = "lucas";
 ```
-#### Local
+### Local
 
 Quando criamos a variável dentro da função, ela está sendo criada pelo escopo `local`.
 
@@ -560,7 +560,7 @@ b;
 // undefined
 ```
 
-### Switch
+## Switch
 
 Switch é um tipo de estrutura condicional, ou seja uma estrutura de decisão utilizada para definir alguma ação para o código. Geralmente é usada para substituir o `If` em situações mais complexas.
 
@@ -582,15 +582,15 @@ function menu(option) {
 
 > O comando `break` é extremamente importante pois é o comando que diz ao seu código para parar de analisar a estrutura de decisão e sair dela. Portanto não podemos esquecer de utilizar esse comando.
 
-### Estruturas de repetição (Loops)
+## Estruturas de repetição (Loops)
 
-#### while
+### While
 
 ```js
 
 ```
 
-#### for
+### For
 
 sintaxe:
 **for( inicializador; condição; expressão final )**
@@ -613,13 +613,13 @@ for(var cont = 0; cont < 10; cont++) {
 */ 
 ```
 
-#### foreach
+### Foreach
 
 ```js
 
 ```
 
-### Operador módulo %
+## Operador módulo %
 
 O operador de módulo nos retorna o resto da divisão inteiro, ou seja, a representação inteira do valor que restou da divisão entre dois números.
 
@@ -629,7 +629,7 @@ O operador de módulo nos retorna o resto da divisão inteiro, ou seja, a repres
 ```
 > Esse operador é útil por exemplo para descobrirmos se um número é par, pois é só dividir ele por 2, se houver resto ele é ímpar, e se não houver ele é par.
 
-### Programação Funcional
+## Programação Funcional
 
 ```js
 function calculator(operador) {
@@ -685,7 +685,7 @@ console.log(mod(5, 2));
 // Resultado da operação: 5%2 = 1
 ```
 
-#### callbacks
+### Callbacks
 
 Callbacks basicamente são chamadas função contidas como parâmetro dentro de outra função.
 

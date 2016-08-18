@@ -339,6 +339,82 @@ As Principais características das funções são:
 
 * Podem receber argumentos ou parâmetros
 
+### Diferentes formas de se declarar uma função
+
+Existem formas diferentes de se declarar uma função em Javascript, são elas:
+
+#### função literal
+
+Sintaxe:
+
+> function [nome_da_função]() { }
+
+```js
+function soma() {
+	return 1 + 3;
+}
+console.log( soma() );
+// 4
+```
+#### função anônima
+
+Sintaxe:
+
+> var [nome_da_variavel] = function () { }
+
+```js
+var varSoma = function() {
+	return 6 + 9;
+}
+console.log( varSoma() );
+// 15
+```
+
+Desta maneira você pode ver a soma não possui nome (anônima), porém ela está sendo atribuida a uma variável então podemos invocá-la diretamente pelo nome da variável.
+
+#### função nomeada e atribuida a uma variável
+
+Sintaxe:
+
+> var [nome_da_variavel] = function [nome_da_função]() { }
+
+```js
+var varSoma = function soma() { 
+	return 9 + 14;
+}
+
+console.log( varSoma() );
+
+/*
+Quando declaramos a função dessa maneira podemos pegar por exemplo o nome da função através do atributo name.
+*/
+
+console.log( varSoma.name );
+// soma
+```
+#### IIFE
+
+A IIFE ou *Immediately-Invoked Function Expression* como o nome diz é uma função que é invocada no momento em que ela é definida. 
+
+```js
+(function(){
+	console.log('Olá mundo!');
+})();
+```
+
+A grande vantagem de utilizarmos IIFE se deve a criação do escopo, ou seja, tudo existente dentro daquela expressão, não é acessível fora dela, portanto não polui seu código do lado de fora.
+
+```js
+(function () {
+  'use strict'
+ 
+  var sayHi = 'oi'
+  console.log(sayHi) // oi
+}())
+ 
+console.log(sayHi) // ReferenceError: sayHi is not defined
+``` 
+
 ### Exercícios de Fixação 1 
 
 Exercício de Fixação 1 em arquivo separado

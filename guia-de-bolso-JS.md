@@ -684,3 +684,24 @@ console.log(division(300, 5));
 console.log(mod(5, 2));
 // Resultado da operação: 5%2 = 1
 ```
+
+#### callbacks
+
+Callbacks basicamente são chamadas função contidas como parâmetro dentro de outra função.
+
+```js
+function calculator(number1, number2) {
+	return function(callback) {
+		return callback(number1, number2);
+	}
+}
+
+// usando o callback através da estrutura criada acima
+var soma = calculator(20, 10);
+soma(function(num1, num2){
+	return num1 + num2;
+});
+// 30
+```
+
+Como Javascript é uma linguagem baseada em eventos, é muito útil a utilização de callbacks para *encadear* funções baseadas em eventos executados.

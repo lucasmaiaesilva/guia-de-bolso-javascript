@@ -347,7 +347,7 @@ Existem formas diferentes de se declarar uma função em Javascript, são elas:
 
 Sintaxe:
 
-> function [nome_da_função]() { }
+> function nome_da_função() { }
 
 ```js
 function soma() {
@@ -360,7 +360,7 @@ console.log( soma() );
 
 Sintaxe:
 
-> var [nome_da_variavel] = function () { }
+> var nome_da_variavel = function () { }
 
 ```js
 var varSoma = function() {
@@ -376,7 +376,7 @@ Desta maneira você pode ver a soma não possui nome (anônima), porém ela est�
 
 Sintaxe:
 
-> var [nome_da_variavel] = function [nome_da_função]() { }
+> var nome_da_variavel = function [nome_da_função]() { }
 
 ```js
 var varSoma = function soma() { 
@@ -399,7 +399,7 @@ A IIFE ou *Immediately-Invoked Function Expression* como o nome diz é uma funç
 ```js
 (function(){
 	console.log('Olá mundo!');
-})();
+}());
 ```
 
 A grande vantagem de utilizarmos IIFE se deve a criação do escopo, ou seja, tudo existente dentro daquela expressão, não é acessível fora dela, portanto não polui seu código do lado de fora.
@@ -410,7 +410,7 @@ A grande vantagem de utilizarmos IIFE se deve a criação do escopo, ou seja, tu
  
   var sayHi = 'oi'
   console.log(sayHi) // oi
-}())
+}());
  
 console.log(sayHi) // ReferenceError: sayHi is not defined
 ``` 

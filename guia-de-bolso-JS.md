@@ -376,7 +376,7 @@ Desta maneira você pode ver a soma não possui nome (anônima), porém ela est�
 
 Sintaxe:
 
-> var nome_da_variavel = function [nome_da_função]() { }
+> var nome_da_variavel = function nome_da_função() { }
 
 ```js
 var varSoma = function soma() { 

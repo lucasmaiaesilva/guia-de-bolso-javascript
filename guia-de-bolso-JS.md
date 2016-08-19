@@ -705,3 +705,26 @@ soma(function(num1, num2){
 ```
 
 Como Javascript é uma linguagem baseada em eventos, é muito útil a utilização de callbacks para *encadear* funções baseadas em eventos executados.
+
+## Typeof
+
+Podemos verificar o **tipo** da variável usando o operador typeof:
+
+```js
+var soma = function(){}
+
+typeof soma;
+// function
+
+typeof 'Lucas';
+// string
+
+typeof {};
+// object
+
+typeof NaN;
+// number
+
+typeof 20;
+// number
+```

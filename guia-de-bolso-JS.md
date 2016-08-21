@@ -458,6 +458,48 @@ As variáveis Truthy são todas as outras.
 
 !!"false";
 // true
+``` 
+
+> A maneira mais comum de se usar o conceito de variáveis Truthy e Falsy é em validação de dados, veja o exemplo abaixo:
+
+```js
+var operation = {
+	'+': function(num1, num2) {
+		return num1 + num2;
+	},
+	'-': function(num1, num2) {
+		return num1 - num2;
+	},
+	'*': function(num1, num2) {
+		num1 * num2;
+	},
+	'/': function(num1, num2) {
+		num1 / num2;
+	},
+	'%': function(num1, num2) {
+		num1 % num2;
+	}
+};
+/*
+Suponhamos que precisemos criar uma função de validação do objeto acima, essa função deve retornar true se o operador passado for algum dos operadores contidos no objeto, e false se o argumento não existir no objeto.
+*/
+
+function isOperationValid(operator) {
+	return !!operation[operator];
+}
+
+/*
+Dessa maneira entendemos que se passado um operador válido o Javascript irá retornar uma **função** que é truthy, e se passarmos um parâmetro inválido, ele irá retornar **undefined** que é falsy, e através do comando **!!** a função irá retornar o booleano daquela operação.
+*/
+
+console.log(isOperationValid('+'));
+// true
+
+console.log(isOperationValid('/'));
+// true
+
+console.log(isOperationValid('X'));
+// false
 ```
 
 ### If Ternário

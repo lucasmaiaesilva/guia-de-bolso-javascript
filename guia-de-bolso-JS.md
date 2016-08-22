@@ -632,6 +632,13 @@ function menu(option) {
 
 ```
 
+### Do While
+
+```js
+
+```
+
+
 ### For
 
 sintaxe:

@@ -662,6 +662,39 @@ for(var cont = 0; cont < 10; cont++) {
 */ 
 ```
 
+### For In
+
+Usado geralmente para percorrer objetos:
+
+sintaxe:
+**for( propriedades in objeto )**
+
+```js
+var carro = {
+	marca: 'VW',
+	modelo: 'Fusca',
+	ano: 1970,
+	cor: 'vermelho'
+}
+
+for (var prop in carro) {
+	console.log( prop, carro[prop] );
+}
+/*
+marca VW
+modelo Fusca
+ano 1970
+cor vermelho
+*/
+```
+
+Ele também é usado para verificar se existe uma propriedade naquele objeto.
+
+```js
+console.log( 'marca' in carro );
+// true
+```
+
 ### Foreach
 
 ```js

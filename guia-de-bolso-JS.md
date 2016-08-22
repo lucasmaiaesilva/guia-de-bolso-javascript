@@ -605,12 +605,12 @@ b;
 ## Switch
 
 sintaxe:
-**Switch( parametro ) {**
+**switch( parametro ) {**
 	**case 'opção':**
-		**...**
+		**...;**
 		**break;**
 	**default:**
-		**...**
+		**...;**
 **}**
 
 Switch é um tipo de estrutura condicional, ou seja uma estrutura de decisão utilizada para definir alguma ação para o código. Geralmente é usada para substituir o `If` em situações mais complexas.

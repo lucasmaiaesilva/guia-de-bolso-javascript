@@ -626,7 +626,6 @@ function menu(option) {
 			break;
 		default:
 			console.log('página não encontrada');
-			break;
 	}	
 }
 ```

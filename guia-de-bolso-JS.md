@@ -604,6 +604,15 @@ b;
 
 ## Switch
 
+sintaxe:
+**Switch( parametro ) {**
+	**case 'opção':**
+		**...**
+		**break;**
+	**default:**
+		**...**
+**}**
+
 Switch é um tipo de estrutura condicional, ou seja uma estrutura de decisão utilizada para definir alguma ação para o código. Geralmente é usada para substituir o `If` em situações mais complexas.
 
 ```js
@@ -642,7 +651,7 @@ function menu(option) {
 ### For
 
 sintaxe:
-**for( inicializador; condição; expressão final )**
+**for( inicializador; condição; expressão final ){ ... }**
 
 ```js
 for(var cont = 0; cont < 10; cont++) {
@@ -667,7 +676,7 @@ for(var cont = 0; cont < 10; cont++) {
 Usado geralmente para percorrer objetos:
 
 sintaxe:
-**for( propriedades in objeto )**
+**for( propriedades in objeto ){ ... }**
 
 ```js
 var carro = {

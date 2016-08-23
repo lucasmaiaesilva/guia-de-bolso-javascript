@@ -818,3 +818,27 @@ typeof NaN;
 typeof 20;
 // number
 ```
+
+## Herança
+
+Herança em Javascript é um conceito que para leigos, pode ser descrito como um tanto quanto utópico, mas existe sim herança em Javascript, veja o exemplo:
+
+```js
+var objPai = { fruit: 'banana', color: 'red' }
+
+// declaramos a herança através do método Object.create()
+var objFilho = Object.create( objPai );
+
+
+// até aqui tudo normal, ao executar o log do objFilho o Javascript nos diz que não existe nenhum dado dentro dele
+console.log( objFilho );
+// {}
+
+
+// mas e se executarmos o log pedindo pra ele mostrar alguma propriedade existente SOMENTE no objPai?
+console.log( objFilho.color );
+// red
+```
+
+Isso é um conceito extremamente interessante para trabalharmos com reaproveitamento de código, onde podemos reaproveitar funções e métodos de maneira genérica através da herança.
+

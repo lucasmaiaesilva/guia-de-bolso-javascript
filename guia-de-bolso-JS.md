@@ -861,3 +861,15 @@ obj2.hasOwnProperty( 'x' );
 // false
 ```
 
+### Método prototypeOf
+
+Esse método verifica se o objeto é herdado de algum outro objeto, caso sim ele retorna true, e caso não ele retorna false.
+
+```js
+objPai.isPrototypeOf( objFilho );
+// true
+
+objFilho.isPrototypeOf( objPai );
+// false
+```
+

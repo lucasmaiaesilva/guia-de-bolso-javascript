@@ -895,3 +895,16 @@ var objEmString = obj.stringify( obj );
 JSON.parse( objEmString );
 // { carro: 'Onix', cor: 'Cinza', ano: 2017 }
 ```
+
+### delete
+
+O método delete como o próprio nome diz, apaga uma propriedade de um objeto:
+
+```js
+var obj = { x: 2, y: 56, z: 13 };
+
+delete obj.y;
+
+console.log(obj);
+// { x: 2, z: 13 }
+```

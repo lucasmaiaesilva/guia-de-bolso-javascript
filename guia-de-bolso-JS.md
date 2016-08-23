@@ -842,3 +842,22 @@ console.log( objFilho.color );
 
 Isso é um conceito extremamente interessante para trabalharmos com reaproveitamento de código, onde podemos reaproveitar funções e métodos de maneira genérica através da herança.
 
+### O método hasOwnProperty
+
+Como executamos propriedades de um objeto pai dentro do objeto filho, pode ser que surja em algum momento a necessidade de verificar se aquela propriedade pertence a aquele objeto em específico, ou se essa propriedade pertence ao objeto pai, para isso usamos o método hasOwnProperty();
+
+```js
+var obj = { x: 1, y: 2 };
+var obj2 = Object.create(obj);
+
+obj2.z = 3;
+console.log( obj2 );
+// { z: 3 }
+
+obj2.hasOwnProperty( 'z' );
+// true
+
+obj2.hasOwnProperty( 'x' );
+// false
+```
+

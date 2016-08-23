@@ -873,3 +873,25 @@ objFilho.isPrototypeOf( objPai );
 // false
 ```
 
+### Método stringify e parse
+
+O método stringify transforma o objeto inteiro em String:
+
+```js
+var obj = { carro: 'Onix', cor: 'Cinza', ano: 2017 };
+
+JSON.stringify( obj );
+
+// "{ carro: 'Onix', cor: 'Cinza', ano: 2017 }"
+```
+
+Já o método parse faz exatamente o contrário: 
+
+```js
+var objEmString = obj.stringify( obj );
+// "{ carro: 'Onix', cor: 'Cinza', ano: 2017 }"
+
+
+JSON.parse( objEmString );
+// { carro: 'Onix', cor: 'Cinza', ano: 2017 }
+```

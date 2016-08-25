@@ -158,9 +158,9 @@ arr.length;
 // utilizando o length podemos facilmente para 'varrer' um array para analisarmos todos os itens dele
 ```
 
-#### método push
+#### métodos push e pop
 
-O método push serve para acrescentar itens novos ao array, esse método é extremamente utilizado.
+O método push serve para acrescentar itens novos ao array, enquanto o método pop serve para removê-los:
 
 ```js
 var frutas = ['maçã', 'pêra', 'abacaxi'];
@@ -169,7 +169,14 @@ frutas;
 
 frutas.push('ameixa');
 // ['maçã', 'pêra', 'abacaxi', 'ameixa']
-``` 
+
+// O método pop sempre remove o último item do array
+frutas.pop();
+// ['maçã', 'pêra', 'abacaxi']
+```
+
+> Ambos os comandos são executados no **final** do array.
+
 
 ### Operadores Aritméticos
 
@@ -701,12 +708,6 @@ Ele também é usado para verificar se existe uma propriedade naquele objeto.
 ```js
 console.log( 'marca' in carro );
 // true
-```
-
-### Foreach
-
-```js
-
 ```
 
 ## Operador módulo %

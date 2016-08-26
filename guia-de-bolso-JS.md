@@ -177,6 +177,21 @@ frutas.pop();
 
 > Ambos os comandos são executados no **final** do array.
 
+#### unshift e shift
+
+Os métodos unshift e shift fazem basicamente a mesma coisa que os métodos push e pop. Porém seus comandos são executados ao **início** do array.
+
+```js
+var arr = [1, 2, 3];
+arr.unshift(0);
+
+// [0, 1, 2, 3]
+
+arr.shift();
+// [1, 2, 3]
+```
+
+
 
 ### Operadores Aritméticos
 

@@ -222,6 +222,15 @@ frutas.reverse();
 // ['abacaxi', 'pêra', 'maçã']
 ```
 
+#### toString
+
+Faz praticamente a mesma coisa que o método join, porém o método `toString` não aceita parâmetros e separa os itens com vírgula.
+
+```js
+var frutas = ['maçã', 'pêra', 'abacaxi'];
+frutas.toString();
+// 'maçã,pêra,abacaxi'
+```
 
 
 ### Operadores Aritméticos

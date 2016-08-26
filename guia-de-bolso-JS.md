@@ -212,6 +212,16 @@ frutas.sort();
 // ['abacaxi', 'maçã', 'pêra']
 ```
 
+#### reverse
+
+O método reverse serve para inverter o array.
+
+```js
+var frutas = ['maçã', 'pêra', 'abacaxi'];
+frutas.reverse();
+// ['abacaxi', 'pêra', 'maçã']
+```
+
 
 
 ### Operadores Aritméticos

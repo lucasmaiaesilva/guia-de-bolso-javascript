@@ -202,6 +202,16 @@ frutas.join(' ');
 // "maçã pêra abacaxi" 
 ```
 
+#### método sort
+
+O método sort serve para ordenar o array em ordem crescente.
+
+```js
+var frutas = ['maçã', 'pêra', 'abacaxi'];
+frutas.sort();
+// ['abacaxi', 'maçã', 'pêra']
+```
+
 
 
 ### Operadores Aritméticos

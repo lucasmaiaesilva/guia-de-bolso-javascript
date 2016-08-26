@@ -191,6 +191,17 @@ arr.shift();
 // [1, 2, 3]
 ```
 
+#### método join
+
+O join serve para juntar itens do array em uma string com um separador passado por parâmetro:
+
+```js
+var frutas = ['maçã', 'pêra', 'abacaxi'];
+frutas.join(' ');
+
+// "maçã pêra abacaxi" 
+```
+
 
 
 ### Operadores Aritméticos

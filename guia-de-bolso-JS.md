@@ -245,6 +245,29 @@ frutas.concat('pêssego');
 frutas;
 // ['maçã', 'pêra', 'abacaxi']
 ```
+#### slice
+
+O método slice serve para obtermos itens do array a partir de dois parâmetros: O primeiro é o índice que ele irá começar o retorno, e o segundo é o índice final sem contar o último número.
+
+```js
+var arr = [1, 2, 3, 4, 5];
+
+arr.slice(1, 4);
+// [2, 3, 4]
+
+/*
+Quando não passamos o segundo parâmetro o Javascript retorna, do primeiro parâmetro até o final do array
+*/
+arr.slice(1);
+// [2, 3, 4, 5]
+
+/*
+também podemos passar parâmetros negativos, por exemplo se passarmos -2 o Javascript retorna os dois últimos itens do array
+*/
+
+arr.slice(-2)
+// [4, 5] 
+```
 
 
 ### Operadores Aritméticos

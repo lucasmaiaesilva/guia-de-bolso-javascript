@@ -269,6 +269,48 @@ arr.slice(-2)
 // [4, 5] 
 ```
 
+#### splice
+
+O método splice serve para remover e até mesmo adicionar elementos a um array de maneira bem singular.
+
+Considere a array abaixo para todos os exemplos:
+
+```js
+var arr = [1, 2, 3, 4, 5, 6, 7];
+```
+Se passarmos somente um parâmetro, o método apaga os itens subsequentes a partir do número passado.
+
+```js
+arr.splice(4);
+// esse comando irá apagar os itens [5, 6, 7]
+
+arr;
+// [1, 2, 3, 4]
+```
+
+O segundo parâmetro corresponde a **quantidade** de itens a ser apagada.
+
+```js
+arr.splice(1, 3);
+// esse comando irá apagar os itens [2, 3, 4]
+
+arr;
+// [1, 5, 6, 7]
+```
+
+Do terceiro parâmetro em diante, os itens passados serão **inseridos** ao array.
+
+```js
+arr.splice(2, 0, 'a');
+// [1, 2, 'a', 3, 4, 5, 6, 7]
+
+arr.splice(2, 0, 'b', 'c', 'd')
+// [1, 2, 'b', 'c', 'd', 'a', 3, 4, 5, 6, 7]
+
+arr.splice(2, 4, 2.5, 2.6, 2.7, 2.8, 2.9);
+// [1, 2, 2.5, 2.6, 2.7, 2.8, 2.9, 3, 4, 5, 6, 7]
+```
+
 
 ### Operadores Aritméticos
 

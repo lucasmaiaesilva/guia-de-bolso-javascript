@@ -349,6 +349,24 @@ var every = arr.every(function(item) {
 // true, TODOS os itens são maiores que 0
 ```
 
+#### some
+
+Retorna true se **pelo menos um** dos itens do array obedecerem a condição passada, caso contrário retorna false:
+
+```js
+var arr = [1, 2, 3, 4];
+
+var some = arr.some(function(item) {
+	return item < 2;
+});
+// true, pois nem PELO MENOS UM dos itens é menor que 2
+
+
+var some = arr.some(function(item) {
+	return === 0;
+});
+// false, NENHUM dos itens do array é igual a 0
+```
 
 
 ### Operadores Aritméticos

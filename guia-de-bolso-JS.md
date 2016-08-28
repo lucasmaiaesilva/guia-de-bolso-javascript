@@ -311,6 +311,24 @@ arr.splice(2, 4, 2.5, 2.6, 2.7, 2.8, 2.9);
 // [1, 2, 2.5, 2.6, 2.7, 2.8, 2.9, 3, 4, 5, 6, 7]
 ```
 
+#### forEach
+
+O forEach serve para percorrer arrays de uma maneira mais organizada e customizável.
+
+```js
+var frutas = ['pêra', 'maçã', 'abacaxi', 'manga', 'kiwi'];
+
+frutas.forEach(function(item, index, array){
+	console.log(item, index, array);
+});
+/*
+pêra 0 [ 'pêra', 'maçã', 'abacaxi', 'manga', 'kiwi' ]
+maçã 1 [ 'pêra', 'maçã', 'abacaxi', 'manga', 'kiwi' ]
+abacaxi 2 [ 'pêra', 'maçã', 'abacaxi', 'manga', 'kiwi' ]
+manga 3 [ 'pêra', 'maçã', 'abacaxi', 'manga', 'kiwi' ]
+kiwi 4 [ 'pêra', 'maçã', 'abacaxi', 'manga', 'kiwi' ]
+*/
+```
 
 ### Operadores Aritméticos
 

@@ -330,6 +330,27 @@ kiwi 4 [ 'pêra', 'maçã', 'abacaxi', 'manga', 'kiwi' ]
 */
 ```
 
+#### every
+
+Retorna true se **todos** os itens do array obedecerem a condição passada, caso contrário retorna false:
+
+```js
+var arr = [1, 2, 3, 4];
+
+var every = arr.every(function(item) {
+	return item < 2;
+});
+// false, pois nem TODOS os itens são menores que 2
+
+
+var every = arr.every(function(item) {
+	return item !== 0;
+});
+// true, TODOS os itens são maiores que 0
+```
+
+
+
 ### Operadores Aritméticos
 
 Os operadores aritmáticos em Javascript são:

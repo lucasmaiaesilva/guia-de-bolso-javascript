@@ -247,6 +247,8 @@ frutas;
 ```
 #### slice
 
+[método de array e string]
+
 O método slice serve para obtermos itens do array a partir de dois parâmetros: O primeiro é o índice que ele irá começar o retorno, e o segundo é o índice final sem contar o último número.
 
 ```js
@@ -1213,6 +1215,8 @@ console.log(obj);
 
 ### with
 
+[método de objeto]
+
 O método with serve para "diminuir" caminhos em um objeto, facilitando a escrita e a legibilidade do código.
 
 ```js
@@ -1227,4 +1231,37 @@ var obj = {
 		}
 	}
 };
+
+with( obj.prop1.prop2.prop3 ) {
+	console.log( prop31, prop32, prop33);
+}
+
+// prop 3.1 prop 3.2 prop 3.3
+```
+
+### Replace
+
+[método de String]
+
+Substitui um char ou mais, para outro, ambos passados em parâmetro.
+
+> replace(string, novaString)
+
+```js
+var name = 'lucas-maia-e-silva';
+name.replace('-', ' ');
+// lucas maiaesilva
+// o método replace para sua execução no primeiro item encontrado
+```
+
+### Substring
+
+O método substring funciona basicamente da mesma maneira que o método slice, porém a diferença entre eles é que o substring só funciona para strings e, diferente do método slice, o método substring **também** aceita que o primeiro parâmetro seja maior que o segundo.
+
+```js
+'lucas'.substring(5, 2);
+// cas
+
+'lucas'.substring(2, 5);
+// cas
 ```

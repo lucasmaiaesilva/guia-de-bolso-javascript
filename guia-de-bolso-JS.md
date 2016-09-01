@@ -370,6 +370,20 @@ var some = arr.some(function(item) {
 // false, NENHUM dos itens do array é igual a 0
 ```
 
+#### map
+
+Possui basicamente a mesma funcionalidade do forEach, a diferença é que ele retorna um **novo** array, sem modificar o array original:
+
+```js
+var arr = [1, 2, 3, 4, 5];
+var map = arr.map(function(item, index, array){
+	return item + 1;
+});
+console.log(arr, map);
+// [1, 2, 3, 4, 5] [2, 3, 4, 5, 6]
+```
+
+
 ### Operadores Aritméticos
 
 Os operadores aritmáticos em Javascript são:

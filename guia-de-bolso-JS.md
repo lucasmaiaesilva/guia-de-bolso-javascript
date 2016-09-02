@@ -383,6 +383,20 @@ console.log(arr, map);
 // [1, 2, 3, 4, 5] [2, 3, 4, 5, 6]
 ```
 
+#### filter
+
+Filtra os dados e retorna um novo array com os itens correspondentes ao comando.
+
+```js
+var arr = [1, 2, 3, 4, 5];
+var filter = arr.filter(function(item, index, array){
+	return item > 2;
+});
+
+console.log(filter);
+// [3, 4, 5]
+```
+
 
 ### Operadores Aritméticos
 

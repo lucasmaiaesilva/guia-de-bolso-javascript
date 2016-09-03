@@ -397,6 +397,88 @@ console.log(filter);
 // [3, 4, 5]
 ```
 
+#### reduce
+
+O reduce funciona quando precisamos reduzir o array porém tratando com mais liberdade o item anterior na iteração:
+
+```js
+var arr = [1, 2, 3, 4];
+var valorInicial = 0;
+
+var reduce = arr.reduce(function(itemAnterior, itemAtual, index, array){
+	return itemAnterior + itemAtual;
+}, valorInicial)
+
+/*
+1 iteração - 0 + 1 = 1
+2 iteração - 1 + 2 = 3
+3 iteração - 3 + 3 = 6
+4 iteração - 6 + 4 = 10
+*/
+
+console.log( reduce );
+// 10
+```
+
+#### reduceRight
+
+Faz praticamente a mesma coisa que o método reduce porém o executa de maneira inversa.
+
+```js
+var arr = ['s', 'i', 'l', 'v', 'a'];
+
+var reduce = arr.reduceRight(function(itemAnterior, itemAtual, index, array){
+	return itemAnterior + itemAtual;
+});
+
+console.log( reduce );
+// avlis
+```
+
+#### indexOf
+
+O método indexOf serve pra retornar o índice de resultados de uma busca em um array.
+
+```js
+var arr = ['l', 'u', 'c', 'a', 's'];
+
+var index = arr.indexOf('c');
+// 2
+
+/*
+quando passamos um segundo parâmetro a busca começa a partir do índice do segundo parâmetro
+*/
+
+var index2 = arr.indexOf('c', 1);
+// 1
+
+/*
+quando o item passado não for encontrado o retorno é -1
+*/
+var index3 = arr.indexOf('l', 1);
+// -1
+```
+
+#### lastIndexOf
+
+Possui praticamente a mesma função que a função indexOf, a diferença que ele o executa de maneira inversa.
+
+#### isArray
+
+Retorna true se a referência passada for um array, caso contrário retorna false.
+
+> se usarmos o operador typeof o retorno de um array é do tipo object, isso ocorre devido a um erro de implementação no Javascript, então a maneira precisa de se fazer essa verificação é pelo método isArray.
+
+```js
+var obj = {};
+var arr = [];
+
+Array.isArray(obj);
+// false
+
+Array.isArray(arr);
+// true
+```
 
 ### Operadores Aritméticos
 
@@ -1182,3 +1264,4 @@ O método substring funciona basicamente da mesma maneira que o método slice, p
 'lucas'.substring(2, 5);
 // cas
 ```
+

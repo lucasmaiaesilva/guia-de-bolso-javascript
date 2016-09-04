@@ -1265,3 +1265,10 @@ O método substring funciona basicamente da mesma maneira que o método slice, p
 // cas
 ```
 
+## Expressões Regulares
+
+Expressões regulares são comandos escritos em uma sintaxe diferente da habitual da linguagem e que servem basicamente para **manipulação avançada de strings**.
+
+sintaxe:
+**/expressão/modificador**
+

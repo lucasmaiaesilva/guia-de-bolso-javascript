@@ -1299,3 +1299,8 @@ Os caracteres alfanuméricos, são reconhecidos pelo `\w` ou em representação 
 
 Usamos a expressão `\d` quando queremos pegar os dígitos, ou seja, caracteres numéricos `[0-9]`. 
 
+
+### Espaço em branco \s, quebra de linha \n e tabulação \t
+
+A expressão `\s` serve para selecionarmos os espaços em branco na expressão regular e `\n` todas as quebras de linha dentro da String e com `\t`, selecionamos todas as tabulações no código.
+

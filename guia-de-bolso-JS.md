@@ -1290,3 +1290,7 @@ A lista serve para capturar ou fazer *match* com algum dos itens contidos nela. 
 
 Os parênteses servem para agrupar itens ou para capturar trechos específicos da nossa expressão regular.
 
+### Caracteres Alfanuméricos \w
+
+Os caracteres alfanuméricos, são reconhecidos pelo `\w` ou em representação de lista, os seguintes caracteres `[A-Za-z0-9_]`.
+

@@ -1286,3 +1286,7 @@ Os modificadores são usados como um parâmetro no final da regex para nos mostr
 
 A lista serve para capturar ou fazer *match* com algum dos itens contidos nela. Ao usarmos a sintaxe ela faz o match da expressão se pelo menos UM item estiver na string.
 
+### Grupo ou Captura ()
+
+Os parênteses servem para agrupar itens ou para capturar trechos específicos da nossa expressão regular.
+

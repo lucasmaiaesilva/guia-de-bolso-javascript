@@ -1304,3 +1304,24 @@ Usamos a expressão `\d` quando queremos pegar os dígitos, ou seja, caracteres 
 
 A expressão `\s` serve para selecionarmos os espaços em branco na expressão regular e `\n` todas as quebras de linha dentro da String e com `\t`, selecionamos todas as tabulações no código.
 
+### Negação ^
+
+O sinal de `^` nega todos os itens passados, ou seja, suponhamos que queremos selecionar em uma lista todos os itens que **não** sejam a, b, ou c, faríamos da seguinte maneira:
+
+```js
+/[^abc]/g
+```
+O `g` ao final da expressão é um modificador, que significa que iremos fazer a busca na expressão de maneira **global**, ou seja, buscando em toda a expressão.
+
+Existe também uma outra maneira de usarmos a negação para selecionarmos itens em nossa expressão, basta utilizarmos os parâmetros específicos em caixa alta, veja os exemplos:
+
+```js
+/\W/g
+// faz o match com todos os itens que NÃO sejam caracteres alfanuméricos
+
+/\D/g 
+// faz o match com todos os itens que NÃO sejam dígitos
+
+// também funciona com \s, \t ou \n
+```
+

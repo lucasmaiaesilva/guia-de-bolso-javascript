@@ -1294,3 +1294,8 @@ Os parênteses servem para agrupar itens ou para capturar trechos específicos d
 
 Os caracteres alfanuméricos, são reconhecidos pelo `\w` ou em representação de lista, os seguintes caracteres `[A-Za-z0-9_]`.
 
+
+### Dígitos \d
+
+Usamos a expressão `\d` quando queremos pegar os dígitos, ou seja, caracteres numéricos `[0-9]`. 
+

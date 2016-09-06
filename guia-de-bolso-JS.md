@@ -1272,3 +1272,17 @@ Expressões regulares são comandos escritos em uma sintaxe diferente da habitua
 sintaxe:
 **/expressão/modificador**
 
+### Modificadores
+
+Os modificadores são usados como um parâmetro no final da regex para nos mostrar qual será a forma de capturar essas expressões:
+
+* O modificador `g` significa que iremos capturar todas as expressões que fizerem o *match* com a string
+
+* O modificador `i` siginifica *ignore case*, ou seja, ele irá ignorar se a letra buscada na regex é maiúscula ou minúscula e irá tratar as duas da mesma forma
+
+* O Multiline `m` serve para tratarmos strings que possuem quebra de linha, e para tratarmos todas as linhas como início de linha, através do caractere ^ o qual veremos mais sobre ele abaixo.
+
+### lista []
+
+A lista serve para capturar ou fazer *match* com algum dos itens contidos nela. Ao usarmos a sintaxe ela faz o match da expressão se pelo menos UM item estiver na string.
+

@@ -1325,3 +1325,47 @@ Existe também uma outra maneira de usarmos a negação para selecionarmos itens
 // também funciona com \s, \t ou \n
 ```
 
+### Caractere Opcional ?
+
+Usamos o `?` a frente do caractere quando queremos mostrar que o caractere anterior **exista ou não exista** na expressão, ou seja, quando queremos que ele seja opcional a expressão.
+
+O caractere ? também pode ser usado ao final de algum repetidor a fim de evitar repetições gulosas, ou seja, repetições que casam com o máximo de caracteres possíveis na expressão, isso é extremamente útil. Vejamos no exemplo abaixo.
+
+Suponhamos que quiséssemos pegar todos os textos existentes dentro das tags contidas em uma string.
+
+```js
+var texto = '<h1>Título da página</h1><p>Este é um parágrafo</p><footer>Rodapé</footer>';
+
+var regex1 = /<\w+>(.+)<\/\w+>/g;
+/*
+dessa forma o match será feito até que seja selecionado o ÚLTIMO ITEM da string, tendo como resultado da expressão o seguinte retorno.
+
+`Título da página</h1><p>Este é um parágrafo</p><footer>Rodapé`
+
+ele retorna o texto todo pois ele faz uma repetição gulosa, ou seja, ele pega o MÁXIMO de itens que ele consegue, fazendo assim o match de toda a expressão dentro da primeira e última tag.
+
+Uma maneira de resolver isso é usar o caractere ? após o repetidor `.+` pois assim anulamos a repetição gulosa e selecionamos o mínimo de caracteres que fazem *match* com aquela situação
+*/
+
+var regex2 = /<\w+>(.+?)<\/\w+>/g;
+
+// utilizando essa regex, o resultado é o seguinte
+
+// `Título da página`
+// `Este é um parágrafo`
+// `Rodapé`
+```
+
+Podemos usar também o sinal `?` para usarmos a sintaxe de um grupo de captura, porém sem efetuar a captura, utilizando a sintaxe `()` para agrupar itens sem capturá-los.
+
+exemplo:
+
+```js
+var texto = 'junho e julho';
+texto.match(/ju(?:n|l)ho/g);
+
+// ['junho', 'julho'];
+```
+
+Vejamos mais sobre os repetidores.
+

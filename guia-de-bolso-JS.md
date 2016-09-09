@@ -1369,3 +1369,9 @@ texto.match(/ju(?:n|l)ho/g);
 
 Vejamos mais sobre os repetidores.
 
+## Repetidores
+
+Suponhamos que quiséssemos pegar todos os anos no formato de quatro dígitos em uma string, teríamos que usar a expressão /\d\d\d\d/g, Mas dependendo do tamanho do match a escrita dessas expressões tornam-se massivas e inviáveis.
+
+Para solucionarmos esse problema, temos os repetidores que são modos de escrita que nos permitem selecionarmos mais de um item, sem que a escrita da expressão torne-se arcaica, vajamos alguns tipos de repetidores.
+

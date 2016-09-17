@@ -1375,3 +1375,297 @@ Suponhamos que quiséssemos pegar todos os anos no formato de quatro dígitos em
 
 Para solucionarmos esse problema, temos os repetidores que são modos de escrita que nos permitem selecionarmos mais de um item, sem que a escrita da expressão torne-se arcaica, vajamos alguns tipos de repetidores.
 
+
+### Repetidor de intervalo
+
+sintaxe:
+**/exp{n,m}/**
+
+Selecionar o item anterior ao menos `n` vezes e no máximo `m` vezes.
+
+Por exemplo, selecionar todas as palavras que tenham entre 5 e 10 letras:
+
+```js
+/\w{5,10}/g
+```
+
+### Repetidor de intervalo aberto
+
+sintaxe:
+**/exp{n,}/**
+
+Seleciona o item da expressão anterior `n` ou mais vezes.
+
+Exemplo, selecionar dígitos no texto que tenham no mínimo dois dígitos:
+
+```js
+/\d{2,}/g
+```
+
+### Repetidor com precisão
+
+sintaxe:
+**/exp{n}/**
+
+Captura a expressão que tenha exatamente aquela quantidade de vezes.
+
+### Caractere opcional
+
+sintaxe:
+**/exp?/**
+
+Indica que aquela expressão pode ou não possuir aquele caractere, ou seja, aquele item indicado pode existir ou não dentro da expressão que ele irá efetuar o match da mesma forma.
+
+### Caractere de adição
+
+Representa uma ou mais ocorrências do item anterior.
+
+sintaxe:
+**/exp+/**
+
+Exemplo palavras que tenham um ou mais letras 's' na String.
+
+```js
+/s+/g
+```
+### Início de String ^
+
+sintaxe:
+**/^exp/**
+
+Verifica se existe aquela expressão no início da string.
+
+### Final de String $
+
+sintaxe:
+**/exp$/**
+
+Faz o match se aquela expressão existe no final da string.
+
+
+## Métodos de string onde podemos usar regex
+
+### match
+
+sintaxe:
+**.match(regex)**
+
+Este método retorna os resultados em forma de itens dentro de um array. E caso a regex não tenha nenhum *match* ele retorna **null**.
+
+### replace
+
+sintaxe:
+**.replace(regex, [string ou callback])**
+
+Substitui os *matches* da expressão regular pela String passada no segundo parâmetro.
+
+### split
+
+sintaxe:
+**.split(regex)**
+
+Quebra String em array de acordo com o parâmetro passado.
+
+```js
+'111.111.111-11'.split( /\D/ );
+// ["111", "111", "111", "11"]
+```
+
+### search
+
+sintaxe:
+**.search(regex)**
+
+Retorna o índice do primeiro item encontrado pela função. Possui a mesma funcionalidade da função `indexOf` porém aceita expressões regulares como parâmetro.
+
+
+### test
+
+sintaxe:
+**regex.test(string)**
+
+Verifica se aquela regex existe ou não dentro da string, caso exista retorna `true` e caso não exista, retorna `false`.
+
+### exec
+
+sintaxe:
+**regex.exec(string)**
+
+Executa a regex e retorna somente UM resultado compatível com a regex a cada vez em que o método é executado.
+
+# Manipulação de DOM
+
+DOM ou *Document Object Model* é a representação que o browser faz do HTML em geral, mas também serve para xml, xHTML entre outros. 
+
+No Javascript existe um objeto que trata essa representação com a finalidade de manipular o DOM, esse objeto é o objeto *document*.
+
+Vejamos alguns métodos de seleção do DOM existentes no objeto *document*.
+
+### getElementById
+
+sintaxe:
+**document.getElementById(ID)**
+
+Retorna o elemento HTML, segundo o id passado por parâmetro na função. Se o id passado não existir ele retorna `null`.
+
+### getElementsByTagName
+
+sintaxe:
+**document.getElementsByTagName(NOMEDATAG)**
+
+Retorna um array com TODOS os elementos que possuem aquela tag. Se não existir nenhuma tag com o nome passado por parâmetro a função retorna *null*.
+
+### getElementsByClassName
+
+sintaxe:
+**document.getElementsByClassName(NOMEDACLASSE)**
+
+Retorna um array com TODOS os elementos que possuem aquela classe como seu atributo *class* em seu HTML. Se não existir nenhuma classe com o nome passado por parâmetro a função retorna *null*.
+
+### getElementsByName
+
+sintaxe:
+**document.getElementByName(NOME)**
+
+Usado geralmente para selecionar elementos que possuem o atributo *name*, encontrados principalmente em tags de formulário, em tags de `input` por exemplo.
+
+### querySelector
+
+O método querySelector recebe um parâmetro e retorna o elemento HTML. Esse parâmetro que deve ser passado ao método querySelector, é o mesmo seletor que usamos no css, ou seja, a mesma forma de escrita. Veja alguns exemplos:
+
+* .class
+* #id
+* [type="text"]
+
+Esses parâmetros devem ser passados no formato string.
+
+```js
+var element = document.querySelector('[type="email"]');
+```
+
+> O método querySelector seleciona somente um elemento o primeiro encontrado. Para selecionarmos todos os elementos que fazem match com o parâmetro passado, usamos o método querySelectorAll().
+
+### Parent Node
+
+sintaxe:
+**elemento.parentNode**
+
+Seleciona o elemento pai daquele nó específico.
+
+```js
+var pai = document.querySelector('container').parentNode;
+
+// <body> </body>
+```
+
+### Child Nodes
+
+sintaxe:
+**elemento.childNodes**
+
+Seleciona todos os elementos que são filhos daquele elemento principal.
+
+```js
+var filhos = document.querySelector('.menu').childNodes;
+```
+
+### First Child
+
+sintaxe:
+**elemento.firstChild**
+
+Seleciona o primeiro filho do elemento principal.
+
+### Last Child
+
+sintaxe:
+**elemento.lastChild**
+
+Seleciona o último filho do elemento principal.
+
+### Next Sibling e Previous Sibling
+
+sintaxe:
+**elemento.nextSibling**
+
+**elemento.previousSibling**
+
+A propriedade nextSibling seleciona o próximo irmão do elemento principal. Enquanto a propriedade previous Sibling retorna o irmão anterior. Caso não haja nenhum próximo nó irmão ele retorna null. 
+
+## Node Types
+
+Existe uma propriedade em Javascript chamada nodeType, essa propriedade serve para vermos qual o tipo do nó daquele elemento. 
+
+vejamos alguns:
+
+* document.nodeType = 9 - o próprio objeto document.
+* element.nodeType = 1 - o elemento html em si
+* text.nodeType = 3 - elementos do tipo text, ou seja, textos normais
+* comments.nodeType = 8 - comentários feitos na página HTML
+* documentFragment = 22 - 
+
+## Node Value
+
+sintaxe:
+**elemento.nodeValue**
+
+Essa propriedade retorna o valor do nó do HTML, com ela é possível até mesmo selecionar textos dentro de comentários.
+
+## Node Name
+
+sintaxe:
+**elemento.nodeName**
+Retorna o nome do nó HTML referenciado. Se for uma tag, ele retorna o nome da tag, se for um texto ele retorna #text, e se for um comentário ele retorna #comment.
+
+```js
+main.firstChild.nextSibling.nodeName;
+// header
+```
+
+## Children
+
+Retorna uma HTML collection com todos os elementos filhos do elemento instanciado.
+
+```js
+var body = document.querySelector('body');
+body.children;
+// HEADER, DIV, FOOTER etc.
+```
+
+Diferente da propriedade `childNodes` a propriedade children, **não** retorna documentos de textos nem retorna comentários. Assim como **firstElementChild**, **lastElementChild**, **previousElementSibling** e **nextElementSibling** que retornam somente os elementos HTML.
+
+Ainda se tratando de elementos somente, temos também a função **childElementCount**, que retorna a quantidade de filhos que aquele nó HTML possui.
+
+## Métodos de manipulação do DOM
+
+### hasAttribute
+
+sintaxe:
+**elemento.hasAttribute(nome)**
+
+retorna true, se o elemento possuir o atributo que for passado a ele como parâmetro, caso contrário retorna false.
+
+### hasAttributes
+
+sintaxe:
+**elemento.hasAttributes()**
+
+retorna true, se o elemento possuir pelo menos um atributo, caso contrário retorna false.
+
+
+### Formulários
+
+#### Value
+
+O atributo value serve para nos referenciarmos ao valor de um input, ou seja, o dado que é inserido nele. Esse atributo serve tanto para obter os dados do valor quanto para atribuir dados a esse valor.
+
+```js
+var $usuario = document.querySelector( '#usuario' );
+
+$usuario.value = 'lucasmaia';
+console.log( $usuario.value );
+
+// lucasmaia
+```
+
+## Eventos

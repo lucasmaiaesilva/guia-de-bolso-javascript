@@ -1652,6 +1652,72 @@ sintaxe:
 
 retorna true, se o elemento possuir pelo menos um atributo, caso contrário retorna false.
 
+### appendChild
+
+sintaxe:
+**elementopai.appendChild(elementofilho)**
+
+É usado quando queremos inserir um nó HTML em um outro elemento, podemos usar o appendChild para mover conteúdo do DOM, ou para criar novos conteúdos também.
+
+### insertBefore
+
+sintaxe:
+**elementopai.insertBefore(elementonovo, nodeReferência)**
+
+Insere o nó do HTML antes do nó passado no segundo parâmetro.
+
+### cloneNode
+
+sintaxe:
+**cloneNode(boolean)**
+
+Usado para clonar o elemento HTML, esse método recebe um parâmetro boleano, se passado como true, o método faz uma cópia completa, ou seja, copia o conteúdo do elemento. Mas se passado false, ele clona somente o elemento, ou seja, somente a tag.
+
+### hasChildNodes
+
+sintaxe:
+**elemento.hasChildNodes()**
+
+Verifica se o elemento passado possui algum nó filho.
+
+### removeChild
+
+sintaxe:
+**elemento.removeChild(elementoFilho)**
+
+Remove o elemento filho passado por parâmetro pela função.
+
+### replaceChild
+
+sintaxe:
+**elemento.replaceChild(novoFilho, antigoFilho)**
+
+### createTextNode
+
+sintaxe:
+**document.createTextNode(text)**
+
+Método pertencente ao objeto document, permite criarmos nós de texto já prontos para serem inseridos aos elementos HTML no DOM. Podemos fazer essa inserção via appendChild ou insertBefore.
+
+### createElement
+
+sintaxe:
+**document.createElement(nomeDaTag)**
+
+Cria um elemento HTML, de acordo com a tag passada por parâmetro.
+
+### getAttribute
+
+sintaxe:
+**elemento.getAttribute(atributo)**
+
+Retorna o valor daquele atributo em formato de string.
+
+### setAttribute
+
+**elemento.setAttribute(atributo, valor)**
+
+Modifica o atributo com o valor passado no segundo parâmetro, se não houver aquele atributo, então um novo atributo é criado e atribuído aquele valor a ele.
 
 ### Formulários
 

@@ -5,7 +5,7 @@
 
 * Navegador (inspecionar elemento)
 
-* Editor de textos (Sublime text)
+* Editor de textos (Sublime text, Brackets, Atom, etc)
 
 * Node JS (https://nodejs.org)
 

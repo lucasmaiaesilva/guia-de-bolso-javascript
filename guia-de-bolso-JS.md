@@ -946,13 +946,24 @@ function menu(option) {
 ### While
 
 ```js
+let count = 0;
+
+while(count < 10){
+	/*Bloco de código*/
+	cont++;
+}
 
 ```
 
 ### Do While
 
 ```js
-
+let i = 0;
+do {
+/*Bloco de código*/
+i++;
+}
+while(i < 5);
 ```
 
 
